@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.udacity.shoestore.R
 import com.udacity.shoestore.databinding.FragmentLoginBinding
 
@@ -22,14 +23,15 @@ class LoginFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         binding.apply {
             mbtNewLogin.setOnClickListener {
-                directionToFragWelcome()
+                directionToWelcomeFragment()
             }
             mbtExistingAccountLogin.setOnClickListener {
-                directionToFragWelcome()
+                directionToWelcomeFragment()
             }
         }
     }
 
-    private fun directionToFragWelcome() {
+    private fun directionToWelcomeFragment() {
+        findNavController().navigate(LoginFragmentDirections.actionLoginFragmentToWelcomeFragment())
     }
 }
