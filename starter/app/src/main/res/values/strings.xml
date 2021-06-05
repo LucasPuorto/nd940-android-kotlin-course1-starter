@@ -1,6 +1,9 @@
 <resources>
     <string name="app_name">ShoeStore</string>
 
+    <!-- Common -->
+    <string name="add_a_shoe">add a shoe</string>
+
     <!-- Login -->
     <string name="email">email</string>
     <string name="password">password</string>
@@ -11,5 +14,11 @@
     <string name="welcome_shoe_store_title">Welcome to Shoe Store</string>
     <string name="welcome_shoe_store_description">Here you can buy your favorite shoes</string>
     <string name="next">next</string>
+
+    <!-- Instruction -->
+    <string name="instruction_shoe_store_title">Instructions to Shoe Store</string>
+    <string name="instruction_shoe_store_firs">By clicking the button below you can go to the shoe detail screen</string>
+    <string name="instruction_shoe_store_second">Here you can choose the shoe detail</string>
+    <string name="instruction_shoe_store_third">When finished, just add the shoe</string>
 </resources>
 
