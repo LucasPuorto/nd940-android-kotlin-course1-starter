@@ -21,60 +21,73 @@
             app:layout_constraintGuide_end="@dimen/margin_24" />
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/textInputLayoutEmail"
+            android:id="@+id/til_login_email"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:hint="email"
-            app:layout_constraintBottom_toTopOf="@id/textInputLayoutPassword"
+            android:hint="@string/email"
+            app:layout_constraintBottom_toTopOf="@id/til_login_password"
             app:layout_constraintEnd_toEndOf="@id/guideline_end"
             app:layout_constraintStart_toStartOf="@id/guideline_start"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_chainStyle="packed">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tie_login_email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textEmailAddress" />
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:selectAllOnFocus="true"
+                android:singleLine="true" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/textInputLayoutPassword"
+            android:id="@+id/til_login_password"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/margin_8"
-            android:hint="password"
-            app:layout_constraintBottom_toTopOf="@id/mtbLogin"
+            android:hint="@string/password"
+            app:endIconMode="password_toggle"
+            app:layout_constraintBottom_toTopOf="@id/mbt_new_login"
             app:layout_constraintEnd_toEndOf="@id/guideline_end"
             app:layout_constraintStart_toStartOf="@id/guideline_start"
-            app:layout_constraintTop_toBottomOf="@id/textInputLayoutEmail">
+            app:layout_constraintTop_toBottomOf="@id/til_login_email">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tie_login_password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textPassword" />
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:selectAllOnFocus="true"
+                android:singleLine="true" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/mtbLogin"
+            android:id="@+id/mbt_new_login"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/margin_24"
-            android:text="new login"
+            android:layout_marginTop="@dimen/margin_16"
+            android:text="@string/new_login"
             android:textAllCaps="false"
-            app:layout_constraintBottom_toTopOf="@id/mtbExistingAccountLogin"
+            app:layout_constraintBottom_toTopOf="@id/mbt_existing_account_login"
             app:layout_constraintEnd_toEndOf="@id/guideline_end"
             app:layout_constraintStart_toStartOf="@id/guideline_start"
-            app:layout_constraintTop_toBottomOf="@id/textInputLayoutPassword" />
+            app:layout_constraintTop_toBottomOf="@id/til_login_password" />
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/mtbExistingAccountLogin"
+            android:id="@+id/mbt_existing_account_login"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="login"
+            android:text="@string/login_with_existing_account"
             android:textAllCaps="false"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@id/guideline_end"
             app:layout_constraintStart_toStartOf="@id/guideline_start"
-            app:layout_constraintTop_toBottomOf="@id/mtbLogin" />
+            app:layout_constraintTop_toBottomOf="@id/mbt_new_login" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

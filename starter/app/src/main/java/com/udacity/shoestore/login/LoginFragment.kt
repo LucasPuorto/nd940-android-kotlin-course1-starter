@@ -21,10 +21,10 @@ class LoginFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.apply {
-            mtbLogin.setOnClickListener {
+            mbtNewLogin.setOnClickListener {
                 directionToFragWelcome()
             }
-            mtbExistingAccountLogin.setOnClickListener {
+            mbtExistingAccountLogin.setOnClickListener {
                 directionToFragWelcome()
             }
         }
