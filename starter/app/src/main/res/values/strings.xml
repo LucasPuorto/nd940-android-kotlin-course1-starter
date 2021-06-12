@@ -20,5 +20,17 @@
     <string name="instruction_shoe_store_firs">By clicking the button below you can go to the shoe detail screen</string>
     <string name="instruction_shoe_store_second">Here you can choose the shoe detail</string>
     <string name="instruction_shoe_store_third">When finished, just add the shoe</string>
+
+    <!-- Shoes List -->
+    <string name="logout">Logout</string>
+
+    <!-- Shoe Details -->
+    <string name="shoe_details_title">shoe details</string>
+    <string name="shoe_details_shoe_name">shoe name</string>
+    <string name="shoe_details_shoe_company">company</string>
+    <string name="shoe_details_shoe_size">shoe size</string>
+    <string name="shoe_details_shoe_description">description</string>
+    <string name="shoe_details_save">save</string>
+    <string name="shoe_details_cancel">cancel</string>
 </resources>
 
