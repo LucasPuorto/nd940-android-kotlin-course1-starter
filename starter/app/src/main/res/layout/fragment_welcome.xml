@@ -22,7 +22,7 @@
 
         <TextView
             android:id="@+id/tv_welcome_title"
-            style="@style/TextAppearance.AppCompat.Title"
+            style="@style/TextAppearance.MaterialComponents.Headline5"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:gravity="center"
@@ -35,7 +35,7 @@
 
         <TextView
             android:id="@+id/tv_welcome_description"
-            style="@style/TextAppearance.AppCompat.Subhead"
+            style="@style/TextAppearance.MaterialComponents.Body2"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/margin_16"
