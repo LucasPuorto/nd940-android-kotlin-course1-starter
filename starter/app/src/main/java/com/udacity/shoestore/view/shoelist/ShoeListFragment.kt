@@ -13,7 +13,6 @@ import androidx.navigation.fragment.findNavController
 import androidx.navigation.ui.NavigationUI
 import com.udacity.shoestore.R
 import com.udacity.shoestore.databinding.FragmentShoeListBinding
-import com.udacity.shoestore.view.welcome.WelcomeFragmentDirections
 
 class ShoeListFragment : Fragment() {
 
@@ -40,6 +39,6 @@ class ShoeListFragment : Fragment() {
     }
 
     private fun directionToFragmentShoeDetails() {
-        findNavController().navigate(WelcomeFragmentDirections.actionWelcomeFragmentToInstructionFragment())
+        findNavController().navigate(ShoeListFragmentDirections.actionShoeListFragmentToShoeDetailsFragment())
     }
 }
