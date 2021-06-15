@@ -41,7 +41,7 @@
             android:layout_marginTop="@dimen/margin_16"
             android:gravity="center"
             android:text="@string/welcome_shoe_store_description"
-            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/mbt_welcome_next"
             app:layout_constraintEnd_toEndOf="@id/guideline_end"
             app:layout_constraintStart_toStartOf="@id/guideline_start"
             app:layout_constraintTop_toBottomOf="@id/tv_welcome_title" />

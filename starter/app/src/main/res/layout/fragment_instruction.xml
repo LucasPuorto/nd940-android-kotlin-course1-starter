@@ -79,7 +79,7 @@
             android:layout_marginTop="@dimen/margin_16"
             android:gravity="center"
             android:text="@string/instruction_shoe_store_third"
-            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/mbt_instruction_next"
             app:layout_constraintEnd_toEndOf="@id/guideline_end"
             app:layout_constraintStart_toStartOf="@id/guideline_start"
             app:layout_constraintTop_toBottomOf="@id/tv_second_instruction" />
