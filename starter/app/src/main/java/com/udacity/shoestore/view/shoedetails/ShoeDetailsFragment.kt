@@ -24,13 +24,28 @@ class ShoeDetailsFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        observables()
         binding.run {
-            mbtShoeDetailsSave.setOnClickListener {
-                directionToFragmentShoesList()
-            }
-            mbtShoeDetailsCancel.setOnClickListener {
-                directionToFragmentShoesList()
-            }
+            mainViewModel = viewModel
+            lifecycleOwner = this@ShoeDetailsFragment
+        }
+    }
+
+    private fun observables() {
+        viewModel.run {
+            cancelLiveData.observe(viewLifecycleOwner, { isCanceled ->
+                if (isCanceled) {
+                    directionToFragmentShoesList()
+                    onCancelEventComplete()
+                }
+            })
+
+            addShoeLiveData.observe(viewLifecycleOwner, { isAdded ->
+                if (isAdded) {
+                    directionToFragmentShoesList()
+                    onAddShoeComplete()
+                }
+            })
         }
     }
 
