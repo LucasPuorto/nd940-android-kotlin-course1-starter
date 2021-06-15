@@ -23,6 +23,10 @@
 
     <!-- Shoes List -->
     <string name="logout">Logout</string>
+    <string name="shoe_list_shoe_name">Shoe Name: %1$s</string>
+    <string name="shoe_list_company">Company: %1$s</string>
+    <string name="shoe_list_shoe_size">Shoe Size: %1$s</string>
+    <string name="shoe_list_description">Description: %1$s</string>
 
     <!-- Shoe Details -->
     <string name="shoe_details_title">shoe details</string>
